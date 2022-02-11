@@ -1,9 +1,9 @@
-html{
-    margin: -9px ;
-    margin-bottom: -30px;
-}
+
 body{
+    margin: 0 0 0 0;
     background-color: rgb(41, 39, 39);
+    overflow-x: hidden;
+    width: 100%;
 }
 p,article{
     font-size: 21px;
@@ -16,6 +16,7 @@ header{
     justify-content: center;
     text-align: center;
     position: relative;
+    width: auto;
     height: 450px;
     
 }
@@ -49,23 +50,33 @@ header{
     border: 1px solid #666;
     margin: 0.5em 0;
 }
-main{}
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
 
 #first_section{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     position: relative;
     background-color: rgb(241, 240, 238);
     padding-bottom: 2em;
+    text-align: center;
 
 }
+#first_section > .content{
+        max-width: 880px;
+        
+}
 #first_section > .content > .content_text{
-
     display: flex;  
     order: 2; 
 }
+
+#first_section > .content > .content_text>p{
+    columns: 2;
+}
+
 
 img{
     width: 100%;
@@ -80,9 +91,9 @@ img{
 
     
 }
+
 .items{
     max-width: 980px;
-    /* min-width: 880px; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -102,25 +113,29 @@ img{
     text-align:center;
     flex-flow: row wrap;
     margin: 10px;
+    line-height: 1.5;
 
 }
 #third_section{
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    position: relative;
     background-color: #fff;
-    padding-bottom: 2em;
+    padding: 2em;
+    
 
 }
 #third_section > .content{
     margin-top: 20px;
+    text-align: center;
 }
 #third_section > .content > .content_text{
     max-width: 880px;
-    display: flex;  
+    text-align: center; 
     order: 2; 
+    
+
 }
 #fourth_section{
     color:aliceblue;
@@ -128,19 +143,29 @@ img{
     align-items: center;
     justify-content: center;
     flex-flow:  wrap;
+    min-height: 312px;
+    position: relative;
 }
 .box{
     text-align: center;
     max-width: 50%;
     min-width: 355px;
+    min-height: 312px;
 }
 .box:first-child{
     background-color:  #2690d4;
 }
+
+.box>p,h2{
+    padding: 23px;
+    margin: 0px;
+}
+
 footer{
     justify-content: space-around;
     display: flex;
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background: #000;
     color: #fff;
     text-align: center;
@@ -149,6 +174,9 @@ footer{
 
 @media (max-width: 706px){
 
+    #first_section > .content > .content_text>p{
+        columns: 1;
+    }
     
     .box{
         min-width: 100%;
