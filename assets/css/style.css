@@ -59,8 +59,6 @@ header{
 }
 
 #first_section{
-    display: flex;
-    justify-content: center;
     background-color: rgb(241, 240, 238);
     padding-bottom: 2em;
     text-align: center;
@@ -68,6 +66,7 @@ header{
 
 #first_section > .content{
     max-width: 880px; 
+    margin: 0 auto;
 }
 
 #first_section > .content > .content_text>p{
@@ -101,26 +100,24 @@ img{
     min-width: 218px;
     min-height: 450px;
     background-color: #fff;
-    justify-content: center;
     text-align:center;
     margin: 10px;
     line-height: 1.5;
 }
 
 #third_section{
-    display: flex;
-    justify-content: center;
     background-color: #fff;
     padding: 2em;
+    text-align: center;
 }
 
 #third_section > .content{
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px; 
 }
 
 #third_section > .content > .content_text{
     max-width: 880px;
+    margin: 0 auto;
 }
 #fourth_section{
     color:aliceblue;
@@ -157,7 +154,6 @@ footer{
 }
 
 @media (max-width: 706px){
-    
     #first_section > .content > .content_text>p{
         columns: 1;
     }
@@ -169,5 +165,4 @@ footer{
         min-width: 100%;
         max-height: 50%;
     }
-
 }
