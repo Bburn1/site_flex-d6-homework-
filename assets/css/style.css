@@ -152,8 +152,28 @@ footer{
     text-align: center;
     line-height: 1.5;
 }
+.animation{
+    
 
-@media (max-width: 706px){
+    animation-name: slide;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+}
+
+
+@keyframes slide{
+    0% {
+        margin-left: 100%;
+    }
+    
+    50% {
+        margin-left: -55%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+@media (max-width: 700px){
     #first_section > .content > .content_text>p{
         columns: 1;
     }
