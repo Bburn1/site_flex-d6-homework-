@@ -90,7 +90,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-flow: row wrap;
     margin: 20px;
 }
 
@@ -123,7 +122,7 @@ img{
     color:aliceblue;
     display: flex;
     justify-content: center;
-    flex-flow:  wrap;
+    
     min-height: 312px;
 }
 .box{
@@ -184,5 +183,18 @@ footer{
     .item{
         min-width: 100%;
         max-height: 50%;
+    }
+    .items{
+        display: flex;
+        flex-flow: wrap;
+    }
+    #fourth_section{
+        display: flex;
+        flex-flow:  wrap;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
     }
 }
